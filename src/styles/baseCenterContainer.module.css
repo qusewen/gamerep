@@ -1,0 +1,11 @@
+.container {
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 100%;
+}
+
+@media (min-width: 1441px) {
+    .container {
+        overflow-x: visible !important;
+    }
+}

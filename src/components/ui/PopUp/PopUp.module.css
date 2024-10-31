@@ -1,0 +1,84 @@
+/* Добавляем в начало файла CSS переменные */
+:root {
+    --z-index-modal: 100000;
+    --z-index-popup-overlay: 150000;
+    --z-index-popup: 200000;
+}
+
+.overlay {
+    position: fixed;
+     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(20, 20, 39, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: var(--z-index-popup-overlay); /* Значительно увеличиваем z-index */
+    width: 130vw;
+    height: 130vh;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1C1A34;
+    border-radius: 20px;
+    box-shadow: 0 4px 42px rgba(51, 71, 91, 0.5) inset,
+    0 4px 21px rgba(0, 0, 0, 0.17);
+
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px;
+    width: 100%;
+    color: var(--color-white);
+    align-items: center;
+    z-index: var(--z-index-popup); /* Ещё больше увеличиваем z-index */
+    background-image: url("/icons/backgrounds/texture.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 19px;
+    height: 19px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeIcon {
+    position: relative;
+    width: 19px;
+    height: 19px;
+}
+
+.closeIcon::before,
+.closeIcon::after {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 2px;
+    background-color: white;
+    top: 50%;
+    left: 0;
+}
+
+.closeIcon::before {
+    transform: rotate(45deg);
+}
+
+.closeIcon::after {
+    transform: rotate(-45deg);
+}

@@ -1,0 +1,122 @@
+.background {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 185px;
+    padding-right: 185px;
+
+    color: var(--color-white);
+    font-family: var(--font-unbounded);
+    font-size: var(--font-size-xs);
+
+    max-width: 1600px;
+}
+
+.base_path {
+    font-weight: 300;
+    color: var(--color-gray-1100);
+    font-family: "Unbounded_Light_Base";
+}
+
+.wrapper_panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.panel {
+    font-size: var(--font-size-sm);
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+}
+
+.panel > * {
+    flex: 1;
+    width: 50%;
+}
+
+.ellipce_1,
+.ellipce_2,
+.ellipce_3 {
+    width: 1163px;
+    height: 1163px;
+    border-radius: 50%;
+    filter: blur(40px);
+    position: absolute;
+    pointer-events: none;
+}
+
+.ellipce_1 {
+    background-color: rgba(132, 40, 255, 0.05);
+    left: -25%;
+    top: -50%;
+}
+
+.ellipce_2 {
+    width: 865px;
+    height: 865px;
+    background-color: rgba(129, 1, 140, 0.05);
+    left: 40%;
+    top: -30%;
+}
+
+.ellipce_3 {
+    height: 865px;
+    background-color: rgba(82, 40, 225, 0.05);
+    left: 0%;
+    top: 30%;
+}
+
+.icon_background {
+    opacity: 0.2;
+    mix-blend-mode: luminosity;
+    position: absolute;
+    pointer-events: none;
+}
+
+.future_sale_offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 212px;
+    border: 2px dashed #7e7e7e;
+    border-radius: 12px;
+    background-color: #141427;
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 16px;
+    font-family: "Unbounded_Regular", sans-serif;
+    color: #7e7e7e;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.winky_smile {
+    width: 12px;
+}
+
+@media (max-width: 1100px) {
+    .panel {
+        flex-direction: column;
+        width: 100%;
+    }
+    .panel > * {
+        flex: 1;
+        width: 100%;
+    }
+    .background {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top: 0;
+        max-width: 100%;
+    }
+    .future_sale_offer {
+        display: none;
+    }
+}

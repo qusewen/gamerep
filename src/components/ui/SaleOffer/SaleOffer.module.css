@@ -1,0 +1,40 @@
+.pannel_inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 212px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.title {
+    display: block;
+    font-size: 20px;
+    font-family: "TT Norms", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.highlightedText {
+    color: var(--color-deeppink);
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.description ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.description li {
+    margin-bottom: 5px;
+}
