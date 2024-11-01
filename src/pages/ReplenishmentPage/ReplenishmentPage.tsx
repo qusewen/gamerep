@@ -660,7 +660,7 @@ function ReplenishmentPage() {
                             </>
 
                         ) : null}
-                        <div className={styles.final_price}>
+                        <div className={styles.final_price} style={{width: width<=maxWidth? '320px': '', margin: width<=maxWidth? '0 auto 25px': '', padding: width<=maxWidth? '21px': '', }}>
                             <div className={styles.wrapper_text}>
                                 <span className={styles.title}>Итог:</span>
                                 <div className={styles.wrapper_count}>
